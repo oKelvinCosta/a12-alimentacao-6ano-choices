@@ -1,0 +1,18 @@
+# Desconsiderar arquivos gerados (exceto XML e XSD dentro de dist)
+dist/*
+!dist/*.xml
+!dist/*.xsd
+
+# Desconsiderar dependências
+node_modules
+
+# Desconsiderar arquivos de cache
+/.cache
+/.idea
+.vscode
+
+# Desconsiderar arquivos de configuração local
+.env*
+
+# Desconsiderar arquivos de backup
+*.swp
