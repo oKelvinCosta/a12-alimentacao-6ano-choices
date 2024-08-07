@@ -1,13 +1,12 @@
 import {
   onMounted,
-  nextTick
+  nextTick,
 } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
 // Só funciona 1 componente por página
 export default {
   setup() {
     onMounted(() => {
-
       // Use nextTick to ensure DOM updates are finished
       nextTick(() => {
         // Sidenav initialization
@@ -16,21 +15,22 @@ export default {
           // specify options here
         });
       });
-
     });
 
     return {};
   },
+
   
-  template: //html 
+  template://html 
   `
+
   <ul id="slide-out" class="sidenav">
     <li>
       <div class="user-view">
         <img src="src/img/logo-choices.webp" alt="Logo Choices" />
         <p class="sidenav__general-title">Choices 6º ano | Alimentação</p>
         <h3 class="sidenav__specific-title">
-          Aula 2 | O que tem em cada alimento?
+        Aula 12 | A origem do alimento importa?
         </h3>
         <div class="progress-box">
           <div class="progress">
@@ -47,16 +47,22 @@ export default {
       <a href="#hero">01: 😊Introdução</a>
     </li>
     <li>
-      <a href="#aplicativo">02: 🥸O aplicativo</a>
+      <a href="#tiposAlimentos">02: 🥸Tipos de alimentos</a>
     </li>
     <li>
-      <a href="#sua-vez">03: 🫡Agora é sua vez</a>
+      <a href="#alimentosProcessados">03: 😨Alimentos processados</a>
     </li>
     <li>
-      <a href="#reflexao">04: 😌É hora da reflexão</a>
+      <a href="#alimentosUltra">04: 🤯Alimentos ultraprocessados</a>
     </li>
     <li>
-      <a href="#concluir">05: 😀Conclusão</a>
+      <a href="#escolherAlimento">05: 🫨Como escolher o alimento</a>
+    </li>
+    <li>
+      <a href="#reflexao">06: 😌É hora da reflexão</a>
+    </li>
+    <li>
+      <a href="#concluir">07: 😀Conclusão</a>
     </li>
   </ul>
   `,

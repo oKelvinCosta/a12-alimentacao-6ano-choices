@@ -5,99 +5,56 @@ export default {
       items: [
         {
           id: 1,
-          img: "src/img/aula/gif-05.webp",
-          alt: "Frutas rodando",
+          img: "src/img/aula/static-09.jpg",
+          alt: "Fast food",
 
           //html
           html: `
-            <p class="body1"><b>Alimentos in natura ou minimamente processados</b></p>
+            <p class="purple-text"><b>E qual é o porquê do alerta inicial?</b></p>
             <br>
             <p>
-            A informação sobre o alimento pode ser dada pelo total do pacote 
-            e/ou por uma porção do alimento. No caso do nosso exemplo, a informação é referente a, apenas, três bolachas.
-            </p>
+            Porque os alimentos ultraprocessados são aqueles produzidos em grandes indústrias, que passam por diferentes técnicas e são produzidos com muitas substâncias, algumas de uso exclusivamente industrial.</p>
             `,
         },
         {
           id: 2,
-          img: "src/img/aula/gif-06.webp",
-          alt: "Ovos com olhos",
+          img: "src/img/aula/static-10.jpg",
+          alt: "Biscoitos",
 
           //html
           html: `
-            <p class="body1"><b>Alimentos in natura ou minimamente processados</b></p>
-            <br>
             <p>
-            Podendo ser de origem animal ou vegetal (maioria), são alimentos que não passam por qualquer alteração após serem retirados da natureza.
-
+            Como exemplo, podemos citar os biscoitos, os salgadinhos, o macarrão instantâneo, os refrigerantes, entre outros.
             </p>
             `,
         },
         {
           id: 3,
-          img: "src/img/aula/static-02.jpg",
-          alt: "comida humana para cachorro",
+          img: "src/img/aula/static-10.1.webp",
+          alt: "Doces",
 
           //html
           html: `
             <p>
-            Como exemplo de alimentos in natura, temos os vegetais, os ovos, as frutas, os tubérculos, entre outros.
-
-            </p>
+          Esses alimentos são nutricionalmente desbalanceados, contendo altos valores calóricos e excesso de nutrientes.
+          </p>
             `,
         },
         {
           id: 4,
-          img: "src/img/aula/static-03.jpg",
-          alt: "Farinha",
+          img: "src/img/aula/static-11.jpg",
+          alt: "Miojo",
 
           //html
           html: `
             <p>
-            Porém, esses alimentos, antes de serem disponibilizados, podem passar por limpeza, refrigeração, embalagem, secagem, trituração, pasteurização, entre outros processos mínimos. 
-
-            </p>
+           Geralmente, esses alimentos contêm substâncias que realçam o sabor, fazendo com que você coma muito mais do que o recomendado e, por isso, estão associados ao sobrepeso e outros problemas de saúde.
+</p>
             `,
-        },
-        {
-          id: 5,
-          img: "src/img/aula/static-04.jpg",
-          alt: "Carnes",
-
-          //html
-          html: `
-            <p>
-            Esses processos, que não inserem sal, açúcar, gordura e/ou outras substâncias, transformam o alimento in natura em alimento minimamente processado.
-
-            </p>
-            <br>
-            <p>
-            Como exemplo, temos a carne, o leite e alguns grãos. 
-
-            </p>
-
-            `,
-        },
-        {
-          id: 6,
-          img: "src/img/aula/static-05.jpg",
-          alt: "Indústria",
-
-          //html
-          html: `
-            <p>
-            Esses processos mínimos ajudam o alimento in natura a ter uma duração maior, permitindo que ele seja armazenado sem estragar rapidamente.
-            </p>
-            <br>
-            <p>
-            Em alguns casos, o processamento pode ajudar também o alimento a se tornar mais digestivo (fermentação, por exemplo).
-            </p>
-
-            `,
-        },
+        }
       ],
       carousel: {
-        class: "carousel-01",
+        class: "carousel-03",
         key: 0,
         elemento: null,
         qtdSlides: 0,

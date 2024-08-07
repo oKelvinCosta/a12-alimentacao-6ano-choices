@@ -16,6 +16,7 @@ import Hero from "./components/hero.js";
 import ImgSideCard from "./components/img-side-card.js";
 import AppFooter from "./components/app-footer.js";
 import Concluir from "./components/concluir.js";
+import Carousel03 from "./components/carousel03.js";
 
 const app = createApp({
   components: {
@@ -27,6 +28,7 @@ const app = createApp({
     ImgSideCard,
     AppFooter,
     Concluir,
+    Carousel03
   },
 
   // Quando o componente estiver montado, executa o código
