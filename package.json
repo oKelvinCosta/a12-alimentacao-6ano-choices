@@ -10,6 +10,7 @@
   "description": "Dependências para a build do projeto SCORM",
   "dependencies": {
     "@types/gulp-if": "^3.0.4",
+    "aos": "^2.3.4",
     "gulp-cli": "^3.0.0"
   },
   "devDependencies": {

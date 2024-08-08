@@ -18,6 +18,7 @@ import AppFooter from "./components/app-footer.js";
 import Concluir from "./components/concluir.js";
 import Carousel03 from "./components/carousel03.js";
 
+
 const app = createApp({
   components: {
     Carousel,
@@ -57,6 +58,11 @@ const app = createApp({
 
     // Adiciona o evento de scroll
     window.addEventListener("scroll", this.handleScroll);
+
+    // AOS Animation -------------------------------------
+    AOS.init({
+      delay: 50,
+    });
   },
   methods: {
     // Barra de progresso Scroll -----------------------------------------------------

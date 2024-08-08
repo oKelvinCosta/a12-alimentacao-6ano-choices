@@ -41,6 +41,7 @@ gulp.task("copyHtml", () => {
   return src("index.html").pipe(dest("dist"));
 });
 
+
 /**
  * Compila os arquivos JavaScript.
  *
@@ -101,6 +102,17 @@ gulp.task("buildImg", () => {
 });
 
 
+
+/**
+ * Copia o arquivo 'aos.css' para o diretório 'dist/src/css'.
+ *
+ * @return {Promise<void>} Uma promessa que é resolvida quando o arquivo 'aos.css' é copiado para o diretório 'dist/src/css'.
+ */
+gulp.task("copyCss", () => {
+  return src("src/css/aos.css")
+  .pipe(dest("dist/src/css"));
+});
+
 /**
  * Compila os arquivos SCSS para CSS e aplica o Autoprefixer.
  *
@@ -108,7 +120,7 @@ gulp.task("buildImg", () => {
  */
 gulp.task("buildScss", () => {
   return gulp
-    .src("src/scss/main.scss")
+    .src(["src/scss/main.scss"])
     .pipe(
       sassCompiler({
         outputStyle: "expanded", // Primeiro compilar sem minificar
@@ -182,6 +194,7 @@ gulp.task("zip", () => {
 let functionsNames = [
   "clean",
   "buildJs",
+  "copyCss",
   "buildScss",
   "purgecss",
   "minify-css",
