@@ -18,10 +18,13 @@
   }
 
   @include tablet {
-    --sidenav-width: 70%;
+    --sidenav-width: 75%;
 
+    .sidenav__general-title{
+      font-size: 12px;
+    }
     h3{
-      font-size: $h4-fontsize;
+      font-size: $h6-fontsize;
     }
 
     li a{

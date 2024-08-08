@@ -1,4 +1,5 @@
 .customCollection {
+  padding: 0;
     li {
       display: flex;
       padding: 0 map-get($spacing-values, "5");
@@ -12,6 +13,12 @@
       }
       p:not(.customCollection__title) {
         font-size: $default-fontsize;
+      }
+      @include mobile {
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
       }
     }
   }

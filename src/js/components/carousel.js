@@ -129,6 +129,7 @@ export default {
       fullWidth: true,
       indicators: true,
       shift: 20,
+      numVisible: 1,
       onCycleTo: (slide) => {
         // this.qtdSlides = slide.parentNode.querySelectorAll(".carousel-item").length;
 

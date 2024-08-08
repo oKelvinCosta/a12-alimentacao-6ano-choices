@@ -12551,10 +12551,13 @@ nav .progress {
 }
 @media only screen and (max-width : 992.99px) {
   .sidenav {
-    --sidenav-width: 70%;
+    --sidenav-width: 75%;
+  }
+  .sidenav .sidenav__general-title {
+    font-size: 12px;
   }
   .sidenav h3 {
-    font-size: 1.85rem;
+    font-size: 1.15rem;
   }
   .sidenav li a {
     margin: 0 0;
@@ -12632,6 +12635,9 @@ nav .progress {
   }
 }
 
+.customCollection {
+  padding: 0;
+}
 .customCollection li {
   display: flex;
   padding: 0 1.5rem;
@@ -12645,6 +12651,13 @@ nav .progress {
 }
 .customCollection li p:not(.customCollection__title) {
   font-size: 16px;
+}
+@media only screen and (max-width : 600.99px) {
+  .customCollection li {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .box-attention, .full-img .full-img__legend {
@@ -12679,11 +12692,12 @@ nav .progress {
 }
 
 .carousel-01, .carousel-03, .carousel-02 {
-  --carousel-height: 416px;
-  --carousel-item-height: 416px;
+  --carousel-height: 430px;
+  --carousel-item-height: 430px;
+  height: var(--carousel-height) !important;
   position: relative;
   color: var(--md-sys-color-on-background);
-  height: var(--carousel-height) !important;
+  border-radius: 18px;
 }
 .carousel-01 > .card, .carousel-03 > .card, .carousel-02 > .card {
   box-shadow: none;
@@ -12707,6 +12721,12 @@ nav .progress {
 .carousel-01 .carousel-item .row, .carousel-03 .carousel-item .row, .carousel-02 .carousel-item .row {
   align-items: center;
   height: 100%;
+}
+@media only screen and (max-width : 600.99px) {
+  .carousel-01 .carousel-item .row, .carousel-03 .carousel-item .row, .carousel-02 .carousel-item .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .carousel-01 .carousel-item .img--round, .carousel-01 .carousel-item .img--circle, .carousel-03 .carousel-item .img--round, .carousel-03 .carousel-item .img--circle, .carousel-02 .carousel-item .img--round, .carousel-02 .carousel-item .img--circle {
   object-fit: cover;
@@ -12733,8 +12753,8 @@ nav .progress {
 }
 @media only screen and (max-width : 600.99px) {
   .carousel-01, .carousel-03, .carousel-02 {
-    --carousel-height: 600px;
-    --carousel-item-height: 600px;
+    --carousel-height: 550px;
+    --carousel-item-height: 550px;
   }
 }
 
@@ -12778,9 +12798,12 @@ footer .container {
   }
   footer .container {
     flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   footer .container div {
     padding: 16px 16px;
+    max-height: 65px;
   }
 }
 
@@ -12954,5 +12977,4 @@ u {
 .point-divider {
   width: 100%;
   margin-top: -2px;
-  margin-bottom: -80px;
 }
