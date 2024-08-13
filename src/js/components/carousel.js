@@ -13,8 +13,8 @@ export default {
             <p class="body1"><b>Alimentos in natura ou minimamente processados</b></p>
             <br>
             <p>
-            A informação sobre o alimento pode ser dada pelo total do pacote 
-            e/ou por uma porção do alimento. No caso do nosso exemplo, a informação é referente a, apenas, três bolachas.
+            Esses alimentos devem ser a base da alimentação, pois garantem uma dieta balanceada, rica em nutrientes, além de serem ambientalmente sustentáveis.
+
             </p>
             `,
         },
@@ -25,8 +25,7 @@ export default {
 
           //html
           html: `
-            <p class="body1"><b>Alimentos in natura ou minimamente processados</b></p>
-            <br>
+
             <p>
             Podendo ser de origem animal ou vegetal (maioria), são alimentos que não passam por qualquer alteração após serem retirados da natureza.
 

@@ -116,9 +116,17 @@ function initView() {
   }
 
   if (buttonFinish) {
-    buttonFinish.addEventListener("click", () => {
+    buttonFinish.addEventListener("click", (e) => {
       saveSuspendData(suspendData);
       finishTopic();
+        //reset animation buble-button
+        e.target.classList.remove('animate');
+        
+        e.target.classList.add('animate');
+        setTimeout(function(){
+          e.target.classList.remove('animate');
+        },700);
+      
     });
   }
 }
