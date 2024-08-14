@@ -1,8 +1,4 @@
-
-import {
-  createApp,
-} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
-
+import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
 // Esse dá erro
 // import {
@@ -18,7 +14,6 @@ import AppFooter from "./components/app-footer.js";
 import Concluir from "./components/concluir.js";
 import Carousel03 from "./components/carousel03.js";
 
-
 const app = createApp({
   components: {
     Carousel,
@@ -29,10 +24,13 @@ const app = createApp({
     ImgSideCard,
     AppFooter,
     Concluir,
-    Carousel03
+    Carousel03,
   },
-
-  // Quando o componente estiver montado, executa o código
+  data() {
+    return {
+      isSmallScreen: false,
+    };
+  },
   /**
    * Inicializa a funcionalidade de scrollspy e adiciona um ouvinte de evento de scroll.
    *
@@ -52,12 +50,22 @@ const app = createApp({
     // Para a ancoragem de links de funcionar de modo animado
     var elems = document.querySelectorAll(".scrollspy");
     var instances = M.ScrollSpy.init(elems, {
-      scrollOffset: -600
       // specify options here
     });
 
     // Adiciona o evento de scroll
     window.addEventListener("scroll", this.handleScroll);
+
+    // Solução erro de scrollspy no T2K -----------------------------------------------------
+
+    // console.log("window.parent.document", window.parent.document);
+    const x = window.matchMedia("(max-width: 600px)");
+
+    // Call listener function at run time
+    this.mediaQuery(x);
+
+    // Attach listener function on state changes
+    x.addEventListener("change", this.mediaQuery);
 
     // AOS Animation -------------------------------------
     AOS.init({
@@ -75,7 +83,6 @@ const app = createApp({
      * @return {void} Esta função não retorna nenhum valor.
      */
     handleScroll() {
-      
       var winScroll =
         document.body.scrollTop || document.documentElement.scrollTop;
       var height =
@@ -91,7 +98,34 @@ const app = createApp({
 
       document.querySelector(".progress-box__number").innerHTML =
         Math.round(scrolled) + "%";
+
+      // console.log("winScroll", winScroll);
+      // console.log("height", height);
+      // console.log("scrolled", scrolled);
     },
+
+    mediaQuery(event) {
+      this.isSmallScreen = event.matches;
+      if (this.isSmallScreen) {
+        console.log("mobile here");
+
+        // If media query matches
+        var parentElement = null;
+        parentElement = window.parent.document.getElementById("launcher_page");
+
+        if (parentElement) {
+          parentElement.style.height = "calc(100vh - 50px) !important";
+          parentElement.style.overflow = "hidden !important";
+
+          console.log("parentElement", parentElement);
+        }
+      }
+    },
+  },
+  beforeDestroy() {
+    // Clean up the event listener to avoid memory leaks
+    const x = window.matchMedia("(max-width: 600px)");
+    x.removeEventListener("change", this.mediaQuery);
   },
 });
 

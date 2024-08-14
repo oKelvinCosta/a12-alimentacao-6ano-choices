@@ -92,6 +92,14 @@ u {
   scroll-margin-top: 100px;
 }
 
+// Corrigir erro scrollspy com menu do sistema T2k
+#launcher_page{
+  @include tablet{
+    height: calc(100vh - 50px) !important;
+    overflow: hidden !important;
+  }
+}
+
 // ------------------------------------
 // Tratamento Aula específica
 // ------------------------------------

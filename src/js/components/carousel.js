@@ -10,7 +10,7 @@ export default {
 
           //html
           html: `
-            <p class="body1"><b>Alimentos in natura ou minimamente processados</b></p>
+            <p class="body1"><b>Alimentos <i>in natura</i> ou minimamente processados</b></p>
             <br>
             <p>
             Esses alimentos devem ser a base da alimentação, pois garantem uma dieta balanceada, rica em nutrientes, além de serem ambientalmente sustentáveis.
@@ -40,7 +40,7 @@ export default {
           //html
           html: `
             <p>
-            Como exemplo de alimentos in natura, temos os vegetais, os ovos, as frutas, os tubérculos, entre outros.
+            Como exemplo de alimentos <i>in natura</i>, temos os vegetais, os ovos, as frutas, os tubérculos, entre outros.
 
             </p>
             `,
@@ -66,7 +66,7 @@ export default {
           //html
           html: `
             <p>
-            Esses processos, que não inserem sal, açúcar, gordura e/ou outras substâncias, transformam o alimento in natura em alimento minimamente processado.
+            Esses processos, que não inserem sal, açúcar, gordura e/ou outras substâncias, transformam o alimento <i>in natura</i> em alimento minimamente processado.
 
             </p>
             <br>
@@ -85,7 +85,7 @@ export default {
           //html
           html: `
             <p>
-            Esses processos mínimos ajudam o alimento in natura a ter uma duração maior, permitindo que ele seja armazenado sem estragar rapidamente.
+            Esses processos mínimos ajudam o alimento <i>in natura</i> a ter uma duração maior, permitindo que ele seja armazenado sem estragar rapidamente.
             </p>
             <br>
             <p>

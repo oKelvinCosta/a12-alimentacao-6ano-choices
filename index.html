@@ -1,301 +1,400 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 12 | A origem do alimento importa?</title>
+    <link rel="icon" type="image/png" href="src/img/Favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aula 12 | A origem do alimento importa?</title>
-  <link rel="icon" type="image/png" href="src/img/Favicon.png">
+    <!-- Fonts Gamay Editorial -->
+    <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
 
-  <!-- Fonts Gamay Editorial -->
-  <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-  <!--Import Google Icon Font-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
 
-  <!-- CSS -->
-  <link type="text/css" rel="stylesheet" href="src/css/main.css" media="screen" />
-  <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 
+    <!-- Vue PROD MODE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 
-  <!-- Vue DEV MODE -->
-  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js" defer></script>
+    <script src="src/js/scorm/SCOFunctions.js" defer></script>
+    <script src="src/js/scorm/scorm-app.js" defer></script>
 
-  <!-- Vue PROD MODE -->
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <link rel="preload" href="src/img/Hero.webp" as="image" />
 
-  <!-- Scorm JS -->
-  <script src="src/js/scorm/APIWrapper.js" defer></script>
-  <script src="src/js/scorm/SCOFunctions.js" defer></script>
-  <script src="src/js/scorm/scorm-app.js" defer></script>
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/bin/materialize.js"
+      defer
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
 
-  <link rel="preload" href="src/img/Hero.webp" as="image" />
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+  </head>
 
-  <!-- Materialize JS -->
-  <script type="text/javascript" src="src/js/bin/materialize.js" defer></script>
-  <!-- AOS JS -->
-  <script type="text/javascript" src="src/js/aos-master/aos.js" defer></script>
+  <body>
+    <div id="app">
+      <!-- Sidebar ---------------------------------- -->
+      <sidebar></sidebar>
 
-  <!-- App.js JS customizado aqui -->
-  <script type="module" src="src/js/app.js"></script>
-</head>
+      <!-- Navbar ---------------------------------- -->
+      <navbar></navbar>
 
-<body>
-  <div id="app">
+      <!-- Hero Banner ---------------------------------- -->
+      <hero></hero>
 
-    <!-- Sidebar ---------------------------------- -->
-    <sidebar></sidebar>
-
-
-    <!-- Navbar ---------------------------------- -->
-    <navbar></navbar>
-
-
-    <!-- Hero Banner ---------------------------------- -->
-    <hero></hero>
-
-
-    <!-- Primeiro Conteúdo ---------------------------------- -->
-    <div class="top-rounded pt-10">
-      <h2 class="center-align mb-5 purple-text" data-aos="zoom-in">Estamos de volta !</h2>
-      <div class="container--medium">
-
-        <p class="body1 center-align"><b>Na última aula, você utilizou um aplicativo para verificar como está sua
-            alimentação. Com ele, foi possível observar a quantidade de calorias e nutrientes ingeridos.</b></p>
-
-
-        <div class="box-attention box-attention--purple" data-aos="fade-up">
-          <p class="body1 purple-text center-align">
-            <b>
-              Dúvida
-            </b>
+      <!-- Primeiro Conteúdo ---------------------------------- -->
+      <div class="top-rounded pt-10">
+        <h2 class="center-align mb-5 purple-text" data-aos="zoom-in">
+          Estamos de volta !
+        </h2>
+        <div class="container--medium">
+          <p class="body1 center-align">
+            <b
+              >Na última aula, você utilizou um aplicativo para verificar como
+              está sua alimentação. Com ele, foi possível observar a quantidade
+              de calorias e nutrientes ingeridos.</b
+            >
           </p>
-        </div>
 
-        <div>
-          <p class="mt-7"><b>Sobre a atividade da aula passada, responda:</b></p>
-          <p>
-
-            Você reparou se alguns dos alimentos consumidos eram ricos em gorduras ruins, ou mesmo cheios de outras
-            substâncias que não agregam um bom valor nutricional?
-          </p>
-        </div>
-
-        <img data-aos="fade-up" class="img--round" src="src/img/aula/gif-01.webp" alt="Mulher ansiosa">
-
-
-        <p>Acredito que, se você comeu muitos biscoitos (ou bolachas?), doces, macarrões instantâneos, salgadinhos,
-          entre outros produtos semelhantes, você chegou a valores elevados de nutrientes que devem ser consumidos com
-          cuidado, certo?</p>
-
-        <img data-aos="fade-up" style="object-position: center top;" class="img--round" src="src/img/aula/gif-02.webp"
-          alt="Bolachas">
-
-        <div data-aos="fade-up" class="mt-7 box-attention box-attention--purple">
-          <p class="body1 purple-text center-align">
-            <b>
-              Sim!
-            </b>
-          </p>
-        </div>
-      </div>
-
-      <div class="full-img mt-10">
-        <div class="full-img__legend py-4 container--medium">
-
-          <p>
-            Na nossa alimentação, comer pouco ou muito não é tudo; o tipo de alimento também determina se a nossa
-            alimentação será saudável ou não.
-          </p>
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-    <!-- Nesta aula ---- -------------------------------->
-
-    <div id="nestaAula" class="white-text py-12 py-10-mobile" data-aos="zoom-in">
-      <div class="container">
-        <div class="row">
-          <div class="col offset-l2 l4 s12 flex--column flex--justify-center">
-            <h3>Nesta aula</h3>
-            <p>Discutiremos os tipos de alimentos que consumimos no dia a dia.</p>
-          </div>
-          <div class="col l6 s12">
-            <img class="img--round" src="src/img/aula/gif-04.webp" alt="Zé colméia dormindo">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tipos de alimentos ------------------------------------>
-
-    <div id="tiposAlimentos" class="scrollspy py-10">
-      <div class="container center-align">
-        <h3 class="purple-text" data-aos="zoom-in">Tipos de alimento!</h3>
-        <p>Separaremos os alimentos em quatro tipos, de acordo com o tipo de processamento sofrido por cada um deles
-          antes de chegar às nossas mesas.</p>
-        <img class="img--round" src="src/img/aula/static-01.jpg" alt="Zé colméia dormindo">
-        <div class="box-attention box-attention--purple my-7" data-aos="fade-up">
-          <p class="body1 purple-text center-align">
-            <b>
-              Para começar... <br>Vamos falar sobre os alimentos in natura ou minimamente processados.
-            </b>
-          </p>
-        </div>
-
-        <carousel></carousel>
-
-      </div>
-      <div id="alimentosProcessados" class="scrollspy container--medium">
-        <p class="body1 purple-text center-align mt-10"><b>Alimentos processados</b></p>
-        <ul class="customCollection left-align">
-          <li class="card card--purple-shadow collection-item avatar mb-5 flex--align-center" data-aos="fade-up">
-            <img src="src/img/Hero.webp" alt="Indústria" class="circle">
-            <div>
-              <p class="customCollection__title"><b>Quais são os alimentos processados?</b></p>
-
-              <p>São alimentos in natura ou minimamente processados que recebem, em geral, açúcar, sal, ou óleo.
-                Pode-se dizer que são versões modificadas do produto original.
-              </p>
-            </div>
-          </li>
-          <li class="card card--purple-shadow collection-item avatar mb-5 flex--align-center" data-aos="fade-up">
-            <img src="src/img/aula/static-06.jpg" alt="grãos" class="circle">
-            <div>
-              <p><b>Exemplos</b></p>
-              <p>Como exemplo, podemos citar as geleias de frutas, queijos, pães e conservas de legumes.
-              </p>
-            </div>
-          </li>
-          <li class="card card--purple-shadow collection-item avatar flex--align-center" data-aos="fade-up">
-            <img src="src/img/aula/static-08.jpg" alt="Pães" class="circle">
-            <div>
-              <p>As alterações aumentam a durabilidade do alimento, mas alteram negativamente a composição nutricional do alimento, aumentando a quantidade de açúcares e lipídios, além do valor calórico.
-
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Alimentos ultraprocessados ------------------------------------>
-
-    <div id="alimentosUltra" class="scrollspy orange-purple-bg pb-12 pb-10-mobile">
-      <img class="point-divider mb-10" src="src/img/aula/Point-divider.svg" alt="divider">
-
-
-      <div class="container center-align">
-        <h3 class="white-text center-align" data-aos="zoom-in">Alimentos ultraprocessados</h3>
-        <p class="white-text center-align">Para começar, deixo uma mensagem:</p>
-        <img style="max-width: 200px;" src="src/img/aula/gif-07.webp" alt="Sirene">
-
-        <p class="white-text center-align" data-aos="fade-up"><u>EVITE ALIMENTOS ULTRAPROCESSADOS</u></p>
-        <carousel03></carousel03>
-      </div>
-      <div id="escolherAlimento" class="scrollspy escolherAlimento container--medium white-text mt-10">
-        <div class="row" data-aos="fade-up">
-          <div class="col s12 center-align">
-            <p class="body1"><b>Como escolher o alimento?</b></p>
-          </div>
-          <div class="col m6 s12">
-            <img class="img--round" src="src/img/aula/gif-08.webp" alt="Ursinho pooh comendo">
-            <p><b>Dica 01</b></p>
-            <p>Se não puder consumir o alimento in natura ou minimamente processado, observe o rótulo do alimento e
-              procure aquele que tenha o menor número de substâncias adicionadas, além daquelas que formam o alimento.
+          <div class="box-attention box-attention--purple" data-aos="fade-up">
+            <p class="body1 purple-text center-align">
+              <b> Dúvida </b>
             </p>
           </div>
-          <div class="col m6 s12">
-            <img class="img--round" src="src/img/aula/static-12.jpg" alt="Concordo">
-            <p><b>Dica 02</b></p>
 
-            <p>Por exemplo, um iogurte natural é composto basicamente por leite e fermento. Escolha sempre o iogurte que
-              contenha somente estes dois ingredientes. No mercado, há muitos que apresentam várias substâncias como
-              amido, xarope de açúcar, entre outras, o que faz com que sejam menos saudáveis que aqueles compostos
-              apenas pelos ingredientes principais.
+          <div>
+            <p class="mt-7">
+              <b>Sobre a atividade da aula passada, responda:</b>
             </p>
-          </div>
-        </div>
-
-        <h3 class="center-align mt-7" data-aos="zoom-in">O que rolou nesta aula?</h3>
-        <p class="center-align">Descobrimos como os alimentos são alterados e como isso interfere em nossa saúde e na
-          durabilidade deles.</p>
-
-      </div>
-    </div>
-
-
-
-
-    <!-- Hora da reflexão ---------------------------------- -->
-    <div id="reflexao" class="mt-10 scrollspy">
-
-      <div class="container--medium center-align">
-        <div class="box-attention box-attention--green mb-5" data-aos="zoom-in">
-          <h3 class="body1 purple-text">
-            É hora da reflexão...
-          </h3>
-        </div>
-        <div class="box-attention box-attention mb-5">
-          <p>
-            <b>
-              1. Você costuma consumir mais produtos processados ou in natura?
-            </b>
-          </p>
-        </div>
-        <div class="box-attention box-attention mb-5">
-          <p>
-            <b>
-              2. Você verifica a quantidade de substâncias em seu alimento?
-            </b>
-          </p>
-        </div>
-        <div class="box-attention box-attention">
-          <p>
-            <b>
-              3. Como é a sua relação com os produtos ultraprocessados? Como você os consome?
-            </b>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Proxima aula ---------------------------------- -->
-
-    <div id="proxima-aula" class="scrollspy mt-10">
-      <div class="container--medium">
-        <div class="row">
-
-          <div class="col s12 m6">
-            <p><b>Na próxima aula...</b></p>
             <p>
-              Falaremos sobre as doenças relacionadas à má alimentação, e aquelas que restringem nossa alimentação.
+              Você reparou se alguns dos alimentos consumidos eram ricos em
+              gorduras ruins, ou mesmo cheios de outras substâncias que não
+              agregam um bom valor nutricional?
             </p>
           </div>
-          <div class="col s12 m6">
-            <img class="img--round img--purple-shadow" src="src/img/aula/gif-09.webp" alt="Comendo biscoi" />
+
+          <img
+            data-aos="fade-up"
+            class="img--round"
+            src="src/img/aula/gif-01.webp"
+            alt="Mulher ansiosa"
+          />
+
+          <p>
+            Acredito que, se você comeu muitos biscoitos (ou bolachas?), doces,
+            macarrões instantâneos, salgadinhos, entre outros produtos
+            semelhantes, você chegou a valores elevados de nutrientes que devem
+            ser consumidos com cuidado, certo?
+          </p>
+
+          <img
+            data-aos="fade-up"
+            style="object-position: center top"
+            class="img--round"
+            src="src/img/aula/gif-02.webp"
+            alt="Bolachas"
+          />
+
+          <div
+            data-aos="fade-up"
+            class="mt-7 box-attention box-attention--purple"
+          >
+            <p class="body1 purple-text center-align">
+              <b> Sim! </b>
+            </p>
+          </div>
+        </div>
+
+        <div class="full-img mt-10">
+          <div class="full-img__legend py-4 container--medium">
+            <p>
+              Na nossa alimentação, comer pouco ou muito não é tudo; o tipo de
+              alimento também determina se a nossa alimentação será saudável ou
+              não.
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- Nesta aula ---- -------------------------------->
+
+      <div
+        id="nestaAula"
+        class="white-text py-12 py-10-mobile"
+        data-aos="zoom-in"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col offset-l2 l4 s12 flex--column flex--justify-center">
+              <h3>Nesta aula</h3>
+              <p>
+                Discutiremos os tipos de alimentos que consumimos no dia a dia.
+              </p>
+            </div>
+            <div class="col l6 s12">
+              <img
+                class="img--round"
+                src="src/img/aula/gif-04.webp"
+                alt="Zé colméia dormindo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tipos de alimentos ------------------------------------>
+
+      <div id="tiposAlimentos" class="scrollspy py-10">
+        <div class="container center-align">
+          <h3 class="purple-text" data-aos="zoom-in">Tipos de alimento!</h3>
+          <p>
+            Separaremos os alimentos em quatro tipos, de acordo com o tipo de
+            processamento sofrido por cada um deles antes de chegar às nossas
+            mesas.
+          </p>
+          <img
+            class="img--round"
+            src="src/img/aula/static-01.jpg"
+            alt="Zé colméia dormindo"
+          />
+          <div
+            class="box-attention box-attention--purple my-7"
+            data-aos="fade-up"
+          >
+            <p class="body1 purple-text center-align">
+              <b>
+                Para começar... <br />Vamos falar sobre os alimentos <i>in natura</i>
+                ou minimamente processados.
+              </b>
+            </p>
+          </div>
+
+          <carousel></carousel>
+        </div>
+        <div id="alimentosProcessados" class="scrollspy container--medium">
+          <p class="body1 purple-text center-align mt-10">
+            <b>Alimentos processados</b>
+          </p>
+          <ul class="customCollection left-align">
+            <li
+              class="card card--purple-shadow collection-item avatar mb-5 flex--align-center"
+              data-aos="fade-up"
+            >
+              <img src="src/img/Hero.webp" alt="Indústria" class="circle" />
+              <div>
+                <p class="customCollection__title">
+                  <b>Quais são os alimentos processados?</b>
+                </p>
+
+                <p>
+                  São alimentos <i>in natura</i> ou minimamente processados que
+                  recebem, em geral, açúcar, sal, ou óleo. Pode-se dizer que são
+                  versões modificadas do produto original.
+                </p>
+              </div>
+            </li>
+            <li
+              class="card card--purple-shadow collection-item avatar mb-5 flex--align-center"
+              data-aos="fade-up"
+            >
+              <img
+                src="src/img/aula/static-06.jpg"
+                alt="grãos"
+                class="circle"
+              />
+              <div>
+                <p><b>Exemplos</b></p>
+                <p>
+                  Como exemplo, podemos citar as geleias de frutas, queijos,
+                  pães e conservas de legumes.
+                </p>
+              </div>
+            </li>
+            <li
+              class="card card--purple-shadow collection-item avatar flex--align-center"
+              data-aos="fade-up"
+            >
+              <img src="src/img/aula/static-08.jpg" alt="Pães" class="circle" />
+              <div>
+                <p>
+                  As alterações aumentam a durabilidade do alimento, mas alteram
+                  negativamente a composição nutricional do alimento, aumentando
+                  a quantidade de açúcares e lipídios, além do valor calórico.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Alimentos ultraprocessados ------------------------------------>
+
+      <div
+        id="alimentosUltra"
+        class="scrollspy orange-purple-bg pb-12 pb-10-mobile"
+      >
+        <img
+          class="point-divider mb-10"
+          src="src/img/aula/Point-divider.svg"
+          alt="divider"
+        />
+
+        <div class="container center-align">
+          <h3 class="white-text center-align" data-aos="zoom-in">
+            Alimentos ultraprocessados
+          </h3>
+          <p class="white-text center-align">
+            Para começar, deixo uma mensagem:
+          </p>
+          <img
+            style="max-width: 200px"
+            src="src/img/aula/gif-07.webp"
+            alt="Sirene"
+          />
+
+          <p class="white-text center-align" data-aos="fade-up">
+            <u>EVITE ALIMENTOS ULTRAPROCESSADOS</u>
+          </p>
+          <carousel03></carousel03>
+        </div>
+        <div
+          id="escolherAlimento"
+          class="scrollspy escolherAlimento container--medium white-text mt-10"
+        >
+          <div class="row" data-aos="fade-up">
+            <div class="col s12 center-align">
+              <p class="body1"><b>Como escolher o alimento?</b></p>
+            </div>
+            <div class="col m6 s12">
+              <img
+                class="img--round"
+                src="src/img/aula/gif-08.webp"
+                alt="Ursinho pooh comendo"
+              />
+              <p><b>Dica 01</b></p>
+              <p>
+                Se não puder consumir o alimento <i>in natura</i> ou minimamente
+                processado, observe o rótulo do alimento e procure aquele que
+                tenha o menor número de substâncias adicionadas, além daquelas
+                que formam o alimento.
+              </p>
+            </div>
+            <div class="col m6 s12">
+              <img
+                class="img--round"
+                src="src/img/aula/static-12.jpg"
+                alt="Concordo"
+              />
+              <p><b>Dica 02</b></p>
+
+              <p>
+                Por exemplo, um iogurte natural é composto basicamente por leite
+                e fermento. Escolha sempre o iogurte que contenha somente estes
+                dois ingredientes. No mercado, há muitos que apresentam várias
+                substâncias como amido, xarope de açúcar, entre outras, o que
+                faz com que sejam menos saudáveis que aqueles compostos apenas
+                pelos ingredientes principais.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="center-align mt-7" data-aos="zoom-in">
+            O que rolou nesta aula?
+          </h3>
+          <p class="center-align">
+            Descobrimos como os alimentos são alterados e como isso interfere em
+            nossa saúde e na durabilidade deles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hora da reflexão ---------------------------------- -->
+      <div id="reflexao" class="mt-10 scrollspy">
+        <div class="container--medium center-align">
+          <div
+            class="box-attention box-attention--green mb-5"
+            data-aos="zoom-in"
+          >
+            <h3 class="body1 purple-text">É hora da reflexão...</h3>
+          </div>
+          <div class="box-attention box-attention mb-5">
+            <p>
+              <b>
+                1. Você costuma consumir mais produtos processados ou <i>in natura</i>?
+              </b>
+            </p>
+          </div>
+          <div class="box-attention box-attention mb-5">
+            <p>
+              <b>
+                2. Você verifica a quantidade de substâncias em seu alimento?
+              </b>
+            </p>
+          </div>
+          <div class="box-attention box-attention">
+            <p>
+              <b>
+                3. Como é a sua relação com os produtos ultraprocessados? Como
+                você os consome?
+              </b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proxima aula ---------------------------------- -->
+
+      <div id="proxima-aula" class="scrollspy mt-10">
+        <div class="container--medium">
+          <div class="row">
+            <div class="col s12 m6">
+              <p><b>Na próxima aula...</b></p>
+              <p>
+                Falaremos sobre as doenças relacionadas à má alimentação, e
+                aquelas que restringem nossa alimentação.
+              </p>
+            </div>
+            <div class="col s12 m6">
+              <img
+                class="img--round img--purple-shadow"
+                src="src/img/aula/gif-09.webp"
+                alt="Comendo biscoi"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Concluir ---------------------------------- -->
+      <concluir></concluir>
+
+      <!-- Footer ---------------------------------- -->
+
+      <app-footer></app-footer>
     </div>
-
-
-
-    <!-- Concluir ---------------------------------- -->
-    <concluir></concluir>
-
-    <!-- Footer ---------------------------------- -->
-
-    <app-footer></app-footer>
-
-
-  </div>
-</body>
-
+  </body>
 </html>
