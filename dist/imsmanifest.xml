@@ -14,12 +14,12 @@ from the Reload Content Package Generator - http://www.reload.ac.uk-->
                         http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
     <organizations default="sesi-mg">
         <organization identifier="sesi-mg" structure="hierarchical">
-            <title>CHOICES 6°Ano | Alimentação</title>
+            <title>Aula 12 | A origem do alimento importa? | CHOICES 6°Ano</title>
             <item
                 identifier="item-identifier"
                 isvisible="true"
                 identifierref="sco01">
-                <title>Aula 11 | Como vai sua alimentação?</title>
+                <title>Aula 12 | A origem do alimento importa?</title>
             </item>
         </organization>
     </organizations>

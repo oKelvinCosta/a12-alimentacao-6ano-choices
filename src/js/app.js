@@ -48,17 +48,16 @@ const app = createApp({
   mounted() {
     // scrollspy -----------------------------------------------------
     // Para a ancoragem de links de funcionar de modo animado
-    var elems = document.querySelectorAll(".scrollspy");
-    var instances = M.ScrollSpy.init(elems, {
-      // specify options here
-    });
+    // var elems = document.querySelectorAll(".scrollspy");
+    // var instances = M.ScrollSpy.init(elems, {
+    //   // specify options here
+    // });
 
     // Adiciona o evento de scroll
     window.addEventListener("scroll", this.handleScroll);
 
     // Solução erro de scrollspy no T2K -----------------------------------------------------
 
-    // console.log("window.parent.document", window.parent.document);
     const x = window.matchMedia("(max-width: 600px)");
 
     // Call listener function at run time
@@ -109,16 +108,7 @@ const app = createApp({
       if (this.isSmallScreen) {
         console.log("mobile here");
 
-        // If media query matches
-        var parentElement = null;
-        parentElement = window.parent.document.getElementById("launcher_page");
-
-        if (parentElement) {
-          parentElement.style.height = "calc(100vh - 50px) !important";
-          parentElement.style.overflow = "hidden !important";
-
-          console.log("parentElement", parentElement);
-        }
+        
       }
     },
   },

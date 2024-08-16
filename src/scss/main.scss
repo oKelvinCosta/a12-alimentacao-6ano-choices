@@ -53,7 +53,9 @@
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 u {
   padding-bottom: 1px;
   border-bottom: 3px solid var(--md-sys-color-tertiary);
