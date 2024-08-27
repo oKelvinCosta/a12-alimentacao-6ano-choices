@@ -1,6 +1,6 @@
 ![versão](https://img.shields.io/static/v1?label=versão&message=v1.0.4&color=%23f44336)
 
-# Projeto de aula SCORM
+# Projeto de aula SCORM com Vue cdn
 Use os arquivos para desenvolvimento e no final gere a build para fazer upload no LMS.
 
 ## ✨ Exemplo
