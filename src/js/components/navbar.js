@@ -10,8 +10,8 @@ export default {
             </a>
             <ul id="nav-mobile" class="left">
               <li>
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><span class="material-symbols-rounded"> list
-                  </span>
+                <a style="pointer-events: none;" href="#" data-target="slide-out" class="sidenav-trigger">
+                
                 </a>
               </li>
             </ul>
